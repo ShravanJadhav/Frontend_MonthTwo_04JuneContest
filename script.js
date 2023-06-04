@@ -6,9 +6,13 @@ function getMenu() {
 }
 
 function displayMenu(foodItems) {
+
+    const menu = document.getElementById("menuBar");
+    menu.innerHTML=`Menu:`;
+ 
+   
     const menuElement = document.getElementById('menu');
      
-   
     foodItems.forEach(item => {
          const listItem = document.createElement('li');
         // const img = document.createElement("img");
@@ -16,8 +20,9 @@ function displayMenu(foodItems) {
         // img.style.width="200px"
         // img.style.alignContent="center";
         // img.style.alignItems="center";
-
+        
         listItem.innerHTML= `
+        
         <li class="item">
         <img class = "imgClass" src="${item.imgSrc}" alt="">
         <h1>${item.name} - $ ${item.price}</h1>
@@ -25,7 +30,9 @@ function displayMenu(foodItems) {
        // listItem.textContent = item.name + ' - Rs' + item.price;
          
         menuElement.append(listItem);
+        
     });
+   
 }
 
 
