@@ -7,6 +7,8 @@ function getMenu() {
 
 function displayMenu(foodItems) {
     const menuElement = document.getElementById('menu');
+     
+   
     foodItems.forEach(item => {
          const listItem = document.createElement('li');
         // const img = document.createElement("img");
@@ -74,7 +76,10 @@ async function handleOrder() {
         console.log('Order Status:', orderStatus);
         const paymentStatus = await payOrder();
         console.log('Payment Status:', paymentStatus);
+        
         thankyouFnc();
+        
+
     } catch (error) {
         console.log(error);
     }

@@ -37,3 +37,14 @@ justify-content: center;
    height:70%; 
    justify-content: center; 
 }
+
+.button{
+    background-color:rgb(245, 115, 115);
+    margin: 20px 650px;
+    padding:20px;
+    border-radius: 20px;
+    display: flex;
+    cursor: pointer;
+    font-size: large;
+     
+}
