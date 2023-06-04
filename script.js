@@ -20,7 +20,7 @@ function displayMenu(foodItems) {
         listItem.innerHTML= `
         <li class="item">
         <img class = "imgClass" src="${item.imgSrc}" alt="">
-        <h1>${item.name} - Rs ${item.price}</h1>
+        <h1>${item.name} - $ ${item.price}</h1>
          </li>`
        // listItem.textContent = item.name + ' - Rs' + item.price;
          
